@@ -2,15 +2,16 @@
 
 :root {
     --fonte-principal: "DM Sans", sans-serif;
-    --cor-background: #0F103F;
+    --cor-background: linear-gradient(180deg, #0F103F 0%, #202066 48.44%, #08082c 100%);
     --cor-da-fonte: #FFFFFF;
     --degrade-btn-1: rgba(255, 255, 255, 0.3);
     --degrade-btn-2: linear-gradient(107.21deg, #C961DE 24.43%, #2954A3 68.95%);
+    --degrade-background-da-fonte: linear-gradient(90deg, #C961DE 10%, #c16cec 35%, #3F56AB 53%, #6b95e9 90%);
     --hover-btn: #102e67;
 }
 
 body {
-    background-color: var(--cor-background);
+    background: var(--cor-background);
 }
 
 .container__banner {
@@ -46,8 +47,15 @@ body {
     font-size: 1.5em;
 }
 
-.banner__subtitulo {
+.banner__subtitulo, .link__entre-em-contato {
     font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    background: var(--degrade-background-da-fonte);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .banner__btn {
@@ -142,7 +150,8 @@ body {
     font-family: var(--fonte-principal);
 }
 
-.projeto, .projeto__centro {
+.projeto,
+.projeto__centro {
     height: 40vh;
     width: 21vw;
     background: rgba(255, 255, 255, 0.42);
@@ -173,7 +182,7 @@ body {
     border-radius: 30px;
 }
 
-.projeto__titulo {
+.projeto__conteudo {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 0px 0px 30px 30px;
     position: fixed;
@@ -224,6 +233,7 @@ body {
     color: rgba(255, 255, 255, 0.42);
     padding: 0 17px;
     cursor: pointer;
+    z-index: 1;
 }
 
 .projetos__seta:hover {
@@ -233,3 +243,134 @@ body {
 .projetos__btn {
     padding: 1em 2em;
 }
+
+.contato__planet, .contato__planet__hover {
+    position: fixed;
+    filter: blur(1px);
+    top: 60%;
+    width: 17vw;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.contato__planet__hover {
+    opacity: 0;
+}
+
+.contato__planet__hover:hover {
+    opacity: 1;
+    filter: blur(0px);
+    z-index: 3;
+}
+
+.contato__planet:hover {
+    opacity: 0;
+}
+
+.container__contato {
+    height: 100vh;
+    background-image: url("/assets/Ilustracao\ footer\ r.svg");
+    background-size: 120vh;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato__box {
+    background: rgba(47, 47, 138, 0.6);
+    backdrop-filter: blur(30%);
+    border: 3px solid #fff;
+    border-radius: 30px;
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.contato__astronauta-img{
+    width: 10vw;
+    margin: -17% -10% 0 0;
+}
+
+.contato__conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+
+    color: var(--cor-da-fonte);
+    font-family: var(--fonte-principal);
+}
+
+.link__icone {
+    width: 80px;
+}
+
+.link__whatsapp, .link__email{
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    padding-top: 10%;
+    gap: 2em;
+}
+
+.contato__link, .social__titulo {
+    font-size: 2em;
+    font-weight: 300;
+    padding-left: 0 0 1em;
+    text-decoration: none;
+    color: var(--cor-da-fonte);
+}
+
+.social__titulo {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.social__icon {
+    display: flex;
+    gap: 17px;
+}
+
+.social__link:hover {
+    filter: blur(1px);
+    cursor: pointer;
+}
+
+.contato__social {
+    display: flex;
+    gap: 2em;
+    padding-top: 2em;
+}
+
+.contato__titulo {}
+
+.social__link {}
+
+.container__footer {}
+
+.parafrago__footer {
+    font-family: var(--fonte-principal);
+    color: var(--cor-da-fonte);
+    font-size: 1em;
+    text-align: center;
+    padding: 2vh 0;
+    background-color: #19135E;
+    border-top: 1px solid var(--cor-da-fonte);
+}
+
+/* .container__menu {
+    height: 40vh;
+    background: #1c1c65a1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
