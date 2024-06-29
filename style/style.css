@@ -2,10 +2,15 @@
 
 :root {
     --fonte-principal: "DM Sans", sans-serif;
+    --cor-background: #0F103F;
+    --cor-da-fonte: #FFFFFF;
+    --degrade-btn-1: rgba(255, 255, 255, 0.3);
+    --degrade-btn-2: linear-gradient(107.21deg, #C961DE 24.43%, #2954A3 68.95%);
+    --hover-btn: #102e67;
 }
 
 body {
-    background-color: #0F103F;
+    background-color: var(--cor-background);
 }
 
 .container__banner {
@@ -32,7 +37,7 @@ body {
     padding: 0;
     gap: 2vh;
 
-    color: white;
+    color: var(--cor-da-fonte);
     font-family: var(--fonte-principal);
     text-align: center;
 }
@@ -57,7 +62,7 @@ body {
 
 .btn_1,
 .btn_2 {
-    background: rgba(255, 255, 255, 0.3);
+    background: var(--degrade-btn-1);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(11.5757px);
 
@@ -66,7 +71,7 @@ body {
     border-radius: 30px;
     align-content: center;
 
-    color: white;
+    color: var(--cor-da-fonte);
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
@@ -74,16 +79,16 @@ body {
 }
 
 .btn_1:hover {
-    background: linear-gradient(107.21deg, #C961DE 24.43%, #2954A3 68.95%);
+    background: var(--hover-btn);
 }
 
 .btn_2 {
-    background: linear-gradient(107.21deg, #C961DE 24.43%, #2954A3 68.95%);
+    background: var(--degrade-btn-2);
     box-shadow: 0px 10px 20px rgba(8, 12, 33, 0.15);
 }
 
 .btn_2:hover {
-    background: rgba(255, 255, 255, 0.3);
+    background: var(--hover-btn);
 }
 
 .container__sobre {
@@ -94,7 +99,7 @@ body {
     background-position: center;
     align-content: center;
 
-    color: white;
+    color: var(--cor-da-fonte);
     font-family: var(--fonte-principal);
     font-size: 0.9em;
     line-height: 2em;
@@ -179,7 +184,7 @@ body {
 
     text-align: center;
     align-content: center;
-    color: white;
+    color: var(--cor-da-fonte);
     font-size: 2em;
     text-transform: capitalize;
 }
