@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --fonte-principal: "DM Sans", sans-serif;
+}
+
+body {
+    background-color: #0F103F;
+}
+
+.container__banner {
+    height: 100vh;
+    background-image: url("/assets/Ilustracao\ banner\ top.svg");
+    background-size: 17%;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+}
+
+.banner__conteudo {
+    height: 100vh;
+    background-image: url("/assets/Ilustracao\ banner\ button.svg");
+    background-size: 26%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    gap: 2vh;
+
+    color: white;
+    font-family: var(--fonte-principal);
+    text-align: center;
+}
+
+.banner__titulo {
+    font-size: 1.5em;
+}
+
+.banner__subtitulo {
+    font-size: 3em;
+}
+
+.banner__btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    align-items: center;
+    padding: 10px;
+    gap: 35px;
+}
+
+.btn_1,
+.btn_2 {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(11.5757px);
+
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    align-content: center;
+
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.btn_2 {
+    background: linear-gradient(107.21deg, #C961DE 24.43%, #2954A3 68.95%);
+    box-shadow: 0px 10px 20px rgba(8, 12, 33, 0.15);
+}
+
+.container__sobre {
+    height: 100vh;
+    background: #0F103F;
+    align-content: start;
+    padding: 0 26%;
+
+    color: white;
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    line-height: 2em;
+}
+
+.subtitulo {
+    font-size: 30px;
+    line-height: 1.5em;
+}
+
+.paragrafo {
+    padding-top: 3%;
+}
