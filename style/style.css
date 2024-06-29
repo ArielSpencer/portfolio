@@ -9,7 +9,7 @@ body {
 }
 
 .container__banner {
-    height: 100vh;
+    height: 80vh;
     background-image: url("/assets/Ilustracao\ banner\ top.svg");
     background-size: 17%;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@ body {
 }
 
 .banner__conteudo {
-    height: 100vh;
+    height: 80vh;
     background-image: url("/assets/Ilustracao\ banner\ button.svg");
     background-size: 26%;
     background-repeat: no-repeat;
@@ -70,6 +70,11 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
+    font-family: var(--fonte-principal);
+}
+
+.btn_1:hover {
+    background: linear-gradient(107.21deg, #C961DE 24.43%, #2954A3 68.95%);
 }
 
 .btn_2 {
@@ -77,23 +82,149 @@ body {
     box-shadow: 0px 10px 20px rgba(8, 12, 33, 0.15);
 }
 
+.btn_2:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
 .container__sobre {
     height: 100vh;
-    background: #0F103F;
-    align-content: start;
-    padding: 0 26%;
+    background-image: url("/assets/Ilustracao\ sobre\ mim.svg");
+    background-size: 130vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-content: center;
 
     color: white;
     font-family: var(--fonte-principal);
-    font-size: 1em;
+    font-size: 0.9em;
     line-height: 2em;
+    padding: 0 36.5vw 15vh 36.5vw;
+}
+
+.subtitulo__sobre {
+    font-size: 1.5em;
+    line-height: 1.5em;
 }
 
 .subtitulo {
-    font-size: 30px;
+    font-size: 2em;
     line-height: 1.5em;
 }
 
 .paragrafo {
-    padding-top: 3%;
+    padding-top: 1em;
+}
+
+.container__projetos {
+    height: 100vh;
+    background-image: url("/assets/Ilustracao\ projetos.svg");
+    background-size: 70vw;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 8vh;
+    gap: 5vh;
+}
+
+.projetos__lista {
+    height: 53vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonte-principal);
+}
+
+.projeto, .projeto__centro {
+    height: 40vh;
+    width: 21vw;
+    background: rgba(255, 255, 255, 0.42);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.62);
+
+    text-align: center;
+}
+
+.projeto__centro {
+    background: rgba(181, 249, 253, 0.42);
+    height: 47vh;
+    width: 30vw;
+    margin: -3%;
+    z-index: 100;
+}
+
+.projeto__imagem {
+    width: 19vw;
+    border-radius: 15px;
+    margin-top: 1em;
+}
+
+.imagem__centro {
+    margin-top: 1em;
+    width: 27vw;
+    border-radius: 30px;
+}
+
+.projeto__titulo {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 0px 0px 30px 30px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 16vh;
+    padding-bottom: 1vh;
+
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: 2em;
+    text-transform: capitalize;
+}
+
+.container__titulo__centro {
+    height: 17vh;
+    padding-bottom: 0;
+}
+
+.lista__tecnologias {
+    display: flex;
+    justify-content: center;
+    padding: 3% 0;
+    gap: 5%;
+}
+
+.tecnologias__imagem {
+    max-width: 26px;
+}
+
+.projeto__btn {
+    height: 3vh;
+}
+
+.btn__center {
+    height: 5vh;
+}
+
+.btn__confira {
+    font-size: 15px;
+    padding: 5px 25px;
+    margin: 0 5px;
+}
+
+.projetos__seta {
+    font-size: 10em;
+    color: rgba(255, 255, 255, 0.42);
+    padding: 0 17px;
+    cursor: pointer;
+}
+
+.projetos__seta:hover {
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.projetos__btn {
+    padding: 1em 2em;
 }
