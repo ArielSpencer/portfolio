@@ -36,7 +36,7 @@ body {
     flex-direction: column;
     justify-content: center;
     padding: 0;
-    gap: 2vh;
+    gap: 3.5vh;
 
     color: var(--cor-da-fonte);
     font-family: var(--fonte-principal);
@@ -124,9 +124,16 @@ body {
 
     color: var(--cor-da-fonte);
     font-family: var(--fonte-principal);
-    font-size: 0.9em;
+    font-size: 1em;
+    font-weight: 500;
     line-height: 2em;
-    padding: 0 36.5vw 15vh 36.5vw;
+    padding: 0 36.5vw 35vh 36.5vw;
+    margin-top: -17vh;
+}
+
+.sobre__astronauta-img {
+    width: 8vh;
+    padding: 0 0 5vh 10.5vw;
 }
 
 .subtitulo__sobre {
