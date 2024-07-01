@@ -58,14 +58,29 @@ body {
     background-clip: text;
 }
 
-.banner__btn {
+.banner__skills, .banner__btn  {
     display: flex;
     flex-direction: row;
     justify-content: center;
 
     align-items: center;
     padding: 10px;
-    gap: 35px;
+    gap: 2em;
+}
+
+
+.banner__skills {
+    font-size: 0.8em;
+}
+
+.skills__bigode {
+    font-size: 3.5em;
+    font-weight: 200;
+}
+
+.skills__icon {
+    max-width: 3.7em;
+    padding-bottom: 0.8em;
 }
 
 .btn_1,
